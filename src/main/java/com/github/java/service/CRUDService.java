@@ -6,7 +6,7 @@ import java.util.List;
 public interface CRUDService<E> {
 
 	E save(E entity);
-	E getByRepoName(E entity);
+	E getByRepoId(E entity);
 	List<E> getAllRepo();
-	void delete (Serializable repoName);
+	void delete (Serializable repoId);
 }
